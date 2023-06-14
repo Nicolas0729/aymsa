@@ -17,16 +17,21 @@
 
     <title>Home | Aymsa</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1.1">
 </head>
 <body>
+
+    <!-- -------Whatsapp-float------ -->
+    <div class="what-float">
+        <a href="#" class="icon-what"><img src="img/whatsApp.png" alt=""></a>
+    </div>
 
     <!-- -------Header-------- -->
     <div class="header">
         <div class="content-header">
-            <div class="top-footer">
+            <div class="top-header">
                 <div class="logo-header">
-                    <img src="img/logo-aymsa.png" alt="">
+                    <a href="#"><img src="img/logo-aymsa.png" alt=""></a>
                 </div>
                 <div class="contact-header">
                     <div class="item-contact">
@@ -35,7 +40,8 @@
                         </div>
                         <div class="text-contact">
                             <h3 class="title-contact">Ubicación</h3>
-                            <p>Edificio Del Café Oficina 2605. Medellín</p>
+                            <p>Edificio Del Café</p>
+                            <p>Oficina 2605. Medellín</p>
                         </div>
                     </div>
                     <div class="item-contact">
@@ -44,7 +50,8 @@
                         </div>
                         <div class="text-contact">
                             <h3 class="title-contact">Horario</h3>
-                            <p>Lunes / Viernes 8:00 am a 5:00 pm    </p>
+                            <p>Lunes / Viernes</p>
+                            <p>8:00 am a 5:00 pm</p>
                         </div>
                     </div>
                     <div class="item-contact">
@@ -53,20 +60,24 @@
                         </div>
                         <div class="text-contact">
                             <h3 class="title-contact">Contacto</h3>
-                            <p>info@aymsa.com +57 340 985995</p>
+                            <p>info@aymsa.com</p>
+                            <p>+57 340 985995</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bot-header">
+        </div>
+        <div class="bot-header">
+            <div class="content-bot">
                 <nav class="navigator">
-                    <a href="#" class="link-navi">Inicio</a>
-                    <a href="#" class="link-navi">Qué es Aymsa</a>
-                    <a href="#" class="link-navi">Portafolio de servicios</a>
+                    <a href="index.html" class="link-navi link-active">Inicio</a>
+                    <a href="quienes-somos.html" class="link-navi">Qué es Aymsa</a>
+                    <a href="portafolio.html" class="link-navi">Portafolio de servicios</a>
                     <a href="#" class="link-navi">Portal clientes</a>
                 </nav>
                 <div class="search-header">
-                    <a href="#" class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <input type="search" name="" id="" placeholder="Buscar...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
         </div>
@@ -77,22 +88,26 @@
         <div class="content-cover">
             <div class="carousel-cover owl-carousel">
                 <div class="card-cover">
-                    <div class="content-card">
-                        <div class="box-cover">
-                            <h2 class="subtitle-box">Servicio integral de <br> <b>Talento Humano</b></h2>
-                            <p>Somos una compañía especializada en tercerización de servicios integrales de 
-                                Talento Humano que provee soluciones y genera valor a su Negocio.</p>
-                            <a href="#" class="btn-box">Conoce nuestro portafolio</a>
+                    <div class="pos-card">
+                        <div class="content-card">
+                            <div class="box-cover">
+                                <h2 class="subtitle-box">Servicio integral de <br> <span class="bold-box">Talento Humano</span></h2>
+                                <p>Somos una compañía especializada en tercerización de servicios integrales de 
+                                    Talento Humano que provee soluciones y genera valor a su Negocio.</p>
+                                <a href="#" class="btn-box">Conoce nuestro portafolio</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-cover">
-                    <div class="content-card">
-                        <div class="box-cover">
-                            <h2 class="subtitle-box">Servicio integral de <br> <b>Talento Humano</b></h2>
-                            <p>Somos una compañía especializada en tercerización de servicios integrales de 
-                                Talento Humano que provee soluciones y genera valor a su Negocio.</p>
-                            <a href="#" class="btn-box">Conoce nuestro portafolio</a>
+                    <div class="pos-card">
+                        <div class="content-card">
+                            <div class="box-cover">
+                                <h2 class="subtitle-box">Servicio integral de <br> <span class="bold-box">Talento Humano</span></h2>
+                                <p>Somos una compañía especializada en tercerización de servicios integrales de 
+                                    Talento Humano que provee soluciones y genera valor a su Negocio.</p>
+                                <a href="#" class="btn-box">Conoce nuestro portafolio</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,47 +116,42 @@
     </div>
 
     <!-- -------Mod-if----- -->
-    <div class="if">
-        <div class="content-if">
-            <div class="grid-if">
-                <div class="rel-cards"></div>
-                <div class="abs-cards">
-                    <div class="head-global">
-                        <h2 class="title-global">Conoce nuestros servicios</h2>
-                        <p>Con más de 20 años en el mercado, hemos creado Soluciones adaptables a cada una 
-                            de sus necesidades que permiten ayudarle a optimizar su tiempo y sus recursos</p>
+    <div class="if if-top">
+        <div class="content-if content-if-deg">
+            <div class="head-if">
+                <h3 class="subtitle-sm">Conoce nuestros servicios</h3>
+                <h2 class="title-sm">Con más de 20 años en el mercado, hemos creado Soluciones adaptables a cada una 
+                    de sus necesidades que permiten ayudarle a optimizar su tiempo y sus recursos</h2>
+            </div>
+            <div class="row-cards">
+                <div class="card-serv">
+                    <div class="img-card">
+                        <img src="img/wallp-01.jpg" alt="">
                     </div>
-                    <div class="row-cards">
-                        <div class="card-serv">
-                            <div class="img-card">
-                                <img src="img/wallp-01.jpg" alt="">
-                            </div>
-                            <div class="text-card">
-                                <h2 class="title-card">Atracción de personal</h2>
-                                <p>Realizamos el proceso de atracción y búsqueda de candidatos mediante el uso de herramientas tecnológicas</p>
-                                <a href="#" class="btn-card">Conoce más</a>
-                            </div>
-                        </div>
-                        <div class="card-serv">
-                            <div class="img-card">
-                                <img src="img/wallp-01.jpg" alt="">
-                            </div>
-                            <div class="text-card">
-                                <h2 class="title-card">Atracción de personal</h2>
-                                <p>Realizamos el proceso de atracción y búsqueda de candidatos mediante el uso de herramientas tecnológicas</p>
-                                <a href="#" class="btn-card">Conoce más</a>
-                            </div>
-                        </div>
-                        <div class="card-serv">
-                            <div class="img-card">
-                                <img src="img/wallp-01.jpg" alt="">
-                            </div>
-                            <div class="text-card">
-                                <h2 class="title-card">Atracción de personal</h2>
-                                <p>Realizamos el proceso de atracción y búsqueda de candidatos mediante el uso de herramientas tecnológicas</p>
-                                <a href="#" class="btn-card">Conoce más</a>
-                            </div>
-                        </div>
+                    <div class="text-card">
+                        <h2 class="title-card">Atracción de personal</h2>
+                        <p>Realizamos el proceso de atracción y búsqueda de candidatos mediante el uso de herramientas tecnológicas</p>
+                        <a href="#" class="btn-card">Conoce más</a>
+                    </div>
+                </div>
+                <div class="card-serv">
+                    <div class="img-card">
+                        <img src="img/wallp-02.jpg" alt="">
+                    </div>
+                    <div class="text-card">
+                        <h2 class="title-card">Atracción de personal</h2>
+                        <p>Realizamos el proceso de atracción y búsqueda de candidatos mediante el uso de herramientas tecnológicas</p>
+                        <a href="#" class="btn-card">Conoce más</a>
+                    </div>
+                </div>
+                <div class="card-serv">
+                    <div class="img-card">
+                        <img src="img/wallp-03.jpg" alt="">
+                    </div>
+                    <div class="text-card">
+                        <h2 class="title-card">Atracción de personal</h2>
+                        <p>Realizamos el proceso de atracción y búsqueda de candidatos mediante el uso de herramientas tecnológicas</p>
+                        <a href="#" class="btn-card">Conoce más</a>
                     </div>
                 </div>
             </div>
@@ -149,24 +159,24 @@
     </div>
 
     <!-- -----Mod-if---- -->
-    <div class="if">
+    <div class="if if-mg">
         <div class="content-if">
             <div class="row-vent">
                 <div class="box-vent">
                     <img src="img/location.svg" alt="">
-                    <h2>Presecia a nivel Nacional</h2>
+                    <h2>Presecia a <b>nivel Nacional</b></h2>
                 </div>
                 <div class="box-vent">
                     <img src="img/pro.svg" alt="">
-                    <h2>Experiencia en todos los sectores y niveles de cargo</h2>
+                    <h2><b>Experiencia en todos los sectores</b> y niveles de cargo</h2>
                 </div>
                 <div class="box-vent">
                     <img src="img/person.svg" alt="">
-                    <h2>Personal altamente capacitadol</h2>
+                    <h2>Personal <b>altamente capacitado</b></h2>
                 </div>
                 <div class="box-vent">
                     <img src="img/manos.svg" alt="">
-                    <h2>Nos ajustamos a las necesidades de cada cliente</h2>
+                    <h2><b>Nos ajustamos a las necesidades</b> de cada cliente</h2>
                 </div>
             </div>
         </div>
@@ -179,31 +189,40 @@
                 <h2 class="title-global">Acompañamos a nuestros clientes</h2>
                 <p>Buscamos suplir todas las necesidades de nuestros clientes, encargándonos de las labores claves de contratación</p>
             </div>
-            <div class="carousel-test">
+            <div class="carousel-test owl-carousel">
                 <div class="card-test">
                     <p><i class="fa-solid fa-quote-left"></i>Breve texto de testimonial que ayuda a generar confianza, cercanía y 
                         nuevas y buenas vivencias de los afiliados frente al servicio y atención brindada por Confiamed<i class="fa-solid fa-quote-right"></i></p>
-                    <h2>Martín Sánchez <br> <span class="carge">CEO Ferias Virtuales</span></h2>        
-                    <img src="img/profile.webp" alt="">
+                    <h2 class="name-author">Martín Sánchez <br> <span class="carge">CEO Ferias Virtuales</span></h2>        
+                    <div class="img-test">
+                        <i class="fa-solid fa-play"></i>
+                        <img src="img/profile.webp" alt="">
+                    </div>
                 </div>
                 <div class="card-test">
                     <p><i class="fa-solid fa-quote-left"></i>Breve texto de testimonial que ayuda a generar confianza, cercanía y 
                         nuevas y buenas vivencias de los afiliados frente al servicio y atención brindada por Confiamed<i class="fa-solid fa-quote-right"></i></p>
-                    <h2>Martín Sánchez <br> <span class="carge">CEO Ferias Virtuales</span></h2>        
-                    <img src="img/profile.webp" alt="">
+                    <h2 class="name-author">Martín Sánchez <br> <span class="carge">CEO Ferias Virtuales</span></h2>        
+                    <div class="img-test">
+                        <i class="fa-solid fa-play"></i>
+                        <img src="img/profile.webp" alt="">
+                    </div>
                 </div>
                 <div class="card-test">
                     <p><i class="fa-solid fa-quote-left"></i>Breve texto de testimonial que ayuda a generar confianza, cercanía y 
                         nuevas y buenas vivencias de los afiliados frente al servicio y atención brindada por Confiamed<i class="fa-solid fa-quote-right"></i></p>
-                    <h2>Martín Sánchez <br> <span class="carge">CEO Ferias Virtuales</span></h2>        
-                    <img src="img/profile.webp" alt="">
+                    <h2 class="name-author">Martín Sánchez <br> <span class="carge">CEO Ferias Virtuales</span></h2>        
+                    <div class="img-test">
+                        <i class="fa-solid fa-play"></i>
+                        <img src="img/profile.webp" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- ------Mod-if----- -->
-    <div class="if">
+    <div class="if x-grey if-back">
         <div class="content-if">
             <div class="head-global">
                 <h2 class="title-global">Contáctenos</h2>
@@ -236,7 +255,7 @@
                         </div>
                         <div class="item-form">
                             <label for="input">Cuéntenos cómo podemos ayudarle</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea name="" id="" cols="30" rows="6"></textarea>
                         </div>
                         <div class="bot-form">
                             <a href="#" class="btn-submit">Enviar mensaje</a>
@@ -250,21 +269,23 @@
     <!-- -------Footer------ -->
     <footer class="footer">
         <div class="content-footer">
-            <div class="col-footer">
-                <h2 class="title-col">Nuestra cultura</h2>
-                <a href="#" class="link-footer">Política de calidad</a>
-                <a href="#" class="link-footer">Visión y misión organizacional</a>
-            </div>
-            <div class="col-footer">
-                <h2 class="title-col">Soporte y ayuda</h2>
-                <a href="#" class="link-footer">Mesa de ayuda</a>
-                <a href="#" class="link-footer">Asesor tecnológico</a>
-            </div>
-            <div class="col-footer">
-                <h2 class="title-col">Contacto</h2>
-                <p>Email: Contacto@Aymsa.Co</p>
-                <p>Celular: 313 870 0607</p>
-                <p>Whatsapp: 313 870 0607</p>
+            <div class="left-footer">
+                <div class="col-footer">
+                    <h2 class="title-col">Nuestra cultura</h2>
+                    <a href="#" class="link-footer">Política de calidad</a>
+                    <a href="#" class="link-footer">Visión y misión organizacional</a>
+                </div>
+                <div class="col-footer">
+                    <h2 class="title-col">Soporte y ayuda</h2>
+                    <a href="#" class="link-footer">Mesa de ayuda</a>
+                    <a href="#" class="link-footer">Asesor tecnológico</a>
+                </div>
+                <div class="col-footer">
+                    <h2 class="title-col">Contacto</h2>
+                    <p>Email: Contacto@Aymsa.Co</p>
+                    <p>Celular: 313 870 0607</p>
+                    <p>Whatsapp: 313 870 0607</p>
+                </div>
             </div>
             <div class="aymsa-footer">
                 <img src="img/logo-aymsa-white.png" alt="">
