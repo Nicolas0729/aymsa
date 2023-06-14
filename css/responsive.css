@@ -175,6 +175,10 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .form-contact .col-form .bot-form button {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
 
     /* ------Footer----- */
     .content-footer .left-footer {
