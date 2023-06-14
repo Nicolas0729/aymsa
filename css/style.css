@@ -796,6 +796,9 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
 }
 
 /* -----Offcanvas------- */
+.offcanvas.offcanvas-start {
+    border-right: 0px;
+}
 .offcanvas-header {
     border-bottom: 1px dashed var(--colorSecundario);
 }
