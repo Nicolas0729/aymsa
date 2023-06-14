@@ -18,20 +18,80 @@
     <title>Home | Aymsa</title>
 
     <link rel="stylesheet" href="css/style.css?v=1.1">
+    <link rel="stylesheet" href="css/responsive.css?v=1.1">
 </head>
 <body>
-
     <!-- -------Whatsapp-float------ -->
     <div class="what-float">
         <a href="#" class="icon-what"><img src="img/whatsApp.png" alt=""></a>
     </div>
+
+    <!-- -------Offcanvas----- -->      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <a href="index.html" class="logo-mobile"><img src="img/logo-aymsa.png" alt=""></a>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="menu-mobile">
+                <a href="index.html" class="link-mobile"><i class="fa-solid fa-caret-right"></i>Inicio</a>
+                <a href="quienes-somos.html" class="link-mobile"><i class="fa-solid fa-caret-right"></i>Qué es Aymsa</a>
+                <a href="portafolio.html" class="link-mobile"><i class="fa-solid fa-caret-right"></i>Portafolio de servicios</a>
+                <a href="#" class="link-mobile"><i class="fa-solid fa-caret-right"></i>Portal clientes</a>
+            </nav>
+            <div class="contact-header contact-mobile">
+                <div class="item-contact">
+                    <div class="icon-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="text-contact">
+                        <h3 class="title-contact">Ubicación</h3>
+                        <p>Edificio Del Café</p>
+                        <p>Oficina 2605. Medellín</p>
+                    </div>
+                </div>
+                <div class="item-contact">
+                    <div class="icon-item">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="text-contact">
+                        <h3 class="title-contact">Horario</h3>
+                        <p>Lunes / Viernes</p>
+                        <p>8:00 am a 5:00 pm</p>
+                    </div>
+                </div>
+                <div class="item-contact">
+                    <div class="icon-item">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text-contact">
+                        <h3 class="title-contact">Contacto</h3>
+                        <p>info@aymsa.com</p>
+                        <p>+57 340 985995</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-mobile">
+            <a href="#" class="icon-mob"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="icon-mob"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon-mob"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
 
     <!-- -------Header-------- -->
     <div class="header">
         <div class="content-header">
             <div class="top-header">
                 <div class="logo-header">
-                    <a href="#"><img src="img/logo-aymsa.png" alt=""></a>
+                    <a href="index.html"><img src="img/logo-aymsa.png" alt=""></a>
+                </div>
+                <div class="icon-mobile">
+                    <div class="search-header">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" name="" id="" placeholder="Buscar...">
+                    </div>
+                    <a class="icon-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></a>
                 </div>
                 <div class="contact-header">
                     <div class="item-contact">
@@ -76,8 +136,8 @@
                     <a href="#" class="link-navi">Portal clientes</a>
                 </nav>
                 <div class="search-header">
-                    <input type="search" name="" id="" placeholder="Buscar...">
                     <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="" id="" placeholder="Buscar...">
                 </div>
             </div>
         </div>
@@ -160,7 +220,7 @@
 
     <!-- -----Mod-if---- -->
     <div class="if if-mg">
-        <div class="content-if">
+        <div class="content-if content-if-min">
             <div class="row-vent">
                 <div class="box-vent">
                     <img src="img/location.svg" alt="">
@@ -183,7 +243,7 @@
     </div>
 
     <!-- ------Mod-if------- -->
-    <div class="if">
+    <div class="if if-min">
         <div class="content-if">
             <div class="head-global">
                 <h2 class="title-global">Acompañamos a nuestros clientes</h2>
@@ -222,7 +282,7 @@
     </div>
 
     <!-- ------Mod-if----- -->
-    <div class="if x-grey if-back">
+    <div class="if x-grey if-back if-min">
         <div class="content-if">
             <div class="head-global">
                 <h2 class="title-global">Contáctenos</h2>
@@ -236,29 +296,29 @@
                 <form action="" class="form-contact">
                     <div class="col-form">
                         <div class="item-form">
-                            <label for="input">Nombre completo</label>
+                            <label for="">Nombre completo</label>
                             <input type="text" name="" id="">
                         </div>
                         <div class="item-form">
-                            <label for="input">Correo electrónico</label>
+                            <label for="">Correo electrónico</label>
                             <input type="email" name="" id="">
                         </div>
                         <div class="item-form">
-                            <label for="input">Teléfono de contacto</label>
+                            <label for="">Teléfono de contacto</label>
                             <input type="text" name="" id="">
                         </div>
                     </div>
                     <div class="col-form">
                         <div class="item-form">
-                            <label for="input">Asunto del mensaje</label>
+                            <label for="">Asunto del mensaje</label>
                             <input type="text" name="" id="">
                         </div>
                         <div class="item-form">
-                            <label for="input">Cuéntenos cómo podemos ayudarle</label>
+                            <label for="">Cuéntenos cómo podemos ayudarle</label>
                             <textarea name="" id="" cols="30" rows="6"></textarea>
                         </div>
                         <div class="bot-form">
-                            <a href="#" class="btn-submit">Enviar mensaje</a>
+                            <button type="submit">Enviar mensaje</button>
                         </div>
                     </div>
                 </form>

@@ -100,29 +100,46 @@ a {
     .top-header .logo-header a img {
         width: 220px;
     }
-    .top-header .contact-header {
+    .top-header .icon-mobile {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .top-header .icon-mobile .icon-menu {
+        font-size: 22px;
+        color: var(--colorPrincipal);
+        display: flex;
+    }
+    .contact-header {
         display: flex;
         align-items: center;
         gap: 50px;
     }
-    .top-header .contact-header .item-contact {
+    .contact-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .contact-header .item-contact {
         display: flex;
         gap: 20px;
     }
-    .top-header .contact-header .item-contact .icon-item i {
+    .contact-header .item-contact .icon-item i {
         font-size: 20px;
         color: var(--colorPrincipal);
     }
-    .top-header .contact-header .item-contact .text-contact {
+    .contact-header .item-contact .text-contact {
         display: flex;
         flex-direction: column;
     }
-    .top-header .contact-header .item-contact .text-contact .title-contact {
+    .contact-header .item-contact .text-contact .title-contact {
         font-size: 14px;
         font-weight: 700;
         color: var(--colorBlack);
     }
-    .top-header .contact-header .item-contact .text-contact p {
+    .contact-header .item-contact .text-contact p {
         font-size: 14px;
         font-weight: 300;
         color: var(--colorBlack);
@@ -155,38 +172,39 @@ a {
     .content-bot .navigator .link-active {
         border-bottom: 8px solid var(--colorWhite);
     }
-    .content-bot .search-header {
+    .search-header {
         width: 300px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        position: relative;
     }
-    .content-bot .search-header:hover input[type="search"] {
-        opacity: 1;
+    .search-header i {
+        position: relative;
+        margin-right: 10px;
+        color: var(--colorWhite);
+        transition: 0.3s;
+    }
+    .search-header:hover input[type="search"] {
+        opacity: 0;
         width: 100%;
     }
-    .content-bot .search-header:hover i {
-        color: var(--colorSecundario);
+    .search-header:hover i {
     }
-    .content-bot .search-header input[type="search"] {
+    .search-header input[type="search"] {
         width: 200px;
         height: 30px;
         border: none;
-        position: relative;
+        position: absolute;
         opacity: 0;
         transition: 0.5s;
         padding: 5px 30px 5px 10px;
         border-radius: 5px;
     }
-    .content-bot .search-header input[type="search"]:focus {
+    .search-header input[type="search"]:focus {
         width: 100%;
         opacity: 1;
-    }
-    .content-bot .search-header i {
-        position: absolute;
-        margin-right: 10px;
-        color: var(--colorWhite);
-        transition: 0.3s;
+        background-color: #ffffffb9;
     }
 
 
@@ -302,7 +320,7 @@ a {
         justify-content: center;
         align-items: center;
         background-color: var(--colorWhite);
-        border: 10px solid #ffffffaf !important;
+        border: 3px solid #ffffffaf !important;
         color: var(--colorTexto) !important;
         border-radius: 50%;
         transition: 0.3s;
@@ -371,8 +389,8 @@ a {
     flex-direction: column;
     padding: 100px 20px;
 }
-.if .content-if-sin {
-    padding: 0;
+.if .content-if-min {
+    padding: 0px 20px;
 }
 .if .content-if-deg {
     background: rgb(244,244,244);
@@ -406,7 +424,8 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
         padding: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
         text-align: center;
     }
     .row-cards .card-serv .text-card .title-card {
@@ -589,7 +608,7 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
             align-items: center;
             justify-content: flex-end;
         }
-        .form-contact .col-form .bot-form .btn-submit {
+        .form-contact .col-form .bot-form button {
             font-size: 18px;
             font-weight: 600;
             color: var(--colorWhite);
@@ -597,8 +616,9 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
             padding: 14px 30px;
             border-radius: 5px;
             transition: 0.3s;
+            border: none;
         }
-        .form-contact .col-form .bot-form .btn-submit:hover {
+        .form-contact .col-form .bot-form button:hover {
             background-color: var(--colorSecundario);
         }
 /* ----Row-vis----- */
@@ -616,7 +636,6 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
 }
 .content-if .head-if .title-sm {
     font-size: 16px;
-    font-weight: 700;
     color: var(--colorBlack);
 }
 .content-if .row-vis {
@@ -769,4 +788,46 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
     font-weight: 600;
     color: var(--colorWhite);
     padding: 0;
+}
+
+/* -----Offcanvas------- */
+.offcanvas-header {
+    border-bottom: 1px dashed var(--colorSecundario);
+}
+.offcanvas-header .logo-mobile img {
+    width: 70px;
+}
+.offcanvas-body .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.offcanvas-body .menu-mobile .link-mobile {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.offcanvas-body .menu-mobile .link-mobile i {
+    color: var(--colorSecundario);
+}
+.offcanvas .social-mobile {
+    width: 100%;
+    background-color: var(--colorPrincipal);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.offcanvas .social-mobile .icon-mob {
+    font-size: 30px;
+    color: var(--colorWhite);
+    transition: 0.3s;
+}
+.offcanvas .social-mobile .icon-mob:hove {
+    color: var(--colorSecundario);
 }
