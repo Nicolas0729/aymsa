@@ -62,29 +62,18 @@
         font-size: 14px;
         padding: 10px 20px; 
     }
+    .carousel-cover .card-cover {
+        height: 630px;
+    }
+    .cover .content-sg {
+        height: 630px;
+    }
     .carousel-cover .owl-prev,
     .carousel-cover .owl-next {
-        background-color: transparent !important;
-        position: absolute;
         top: 400px;
-        transition: 0.3s;
-    }
-    .carousel-cover .owl-prev span,
-    .carousel-cover .owl-next span {
-        font-size: 40px;
-        width: 35px;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffffff81;
-        color: var(--colorWhite) !important;
-        border-radius: 50%;
-        transition: 0.3s;
-        padding-bottom: 5px;
     }
     .carousel-cover .owl-next {
-        left: 70px;
+        left: 85px;
     }
     .carousel-cover .owl-prev {
         left: 30px;

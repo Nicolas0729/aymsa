@@ -238,7 +238,6 @@ a {
 }
 .content-cover .carousel-cover {
     width: 100%;
-    min-height: 747px;
     display: flex;
 }
     .carousel-cover .card-cover {
