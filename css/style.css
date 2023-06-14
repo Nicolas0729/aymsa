@@ -425,6 +425,8 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
         object-fit: cover;
     }
     .row-cards .card-serv .text-card {
+        width: 100%;
+        height: 100%;
         padding: 50px;
         display: flex;
         flex-direction: column;
@@ -451,6 +453,7 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
         border-radius: 5px;
         border: 1px solid var(--colorPrincipal);
         transition: 0.3s;
+        margin-top: auto;
     } 
     .row-cards .card-serv .text-card .btn-card:hover {
         background-color: var(--hoverBoton);
@@ -820,6 +823,7 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
     gap: 8px;
 }
 .offcanvas-body .menu-mobile .link-mobile i {
+    font-size: 7px;
     color: var(--colorSecundario);
 }
 .offcanvas .social-mobile {
