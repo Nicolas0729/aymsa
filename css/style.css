@@ -80,7 +80,21 @@ a {
 
 /* ----Header--- */
 .header {
+    background-color: #fff;
     width: 100%;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    transition: 0.5s;
+}
+.header.sticky {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+header.sticky .content-header .top-header {
+    padding: 10px 20px;
+}
+header.sticky .top-header .logo-header a img {
+    width: 140px;
 }
 .header .content-header {
     width: 100%;
@@ -93,12 +107,14 @@ a {
     justify-content: space-between;
     align-items: center;    
     padding: 20px;
+    transition: 0.5s;
 }
     .top-header .logo-header {
         margin-left:0px;
     }
     .top-header .logo-header a img {
         width: 220px;
+        transition: 0.8s;
     }
     .top-header .icon-mobile {
         display: flex;
@@ -166,7 +182,7 @@ a {
         color: var(--colorWhite);
         padding: 15px 45px;
         border-bottom: 8px solid transparent;
-        margin-bottom: -8px;
+        margin-bottom: -7px;
         z-index: 99;
     }
     .content-bot .navigator .link-active {
@@ -215,6 +231,7 @@ a {
 /* ----Cover---- */
 .cover{
     width: 100%;
+    padding-top: 215px;
 }
 .cover-sg {
     width: 100%;
