@@ -84,7 +84,7 @@ a {
 }
 .header .content-header {
     width: 100%;
-    max-width: 1195px;
+    max-width: 1310px;
     margin: auto;
 }
 .content-header .top-header {
@@ -150,7 +150,7 @@ a {
 }
 .bot-header .content-bot {
     width: 100%;
-    max-width: 1195px;
+    max-width: 1310px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -159,11 +159,12 @@ a {
     .content-bot .navigator {
         display: flex;
         align-items: center;
+        gap: 20px;
     }
     .content-bot .navigator .link-navi {
         font-size: 18px;
         color: var(--colorWhite);
-        padding: 15px 40px 15px 40px;
+        padding: 15px 45px;
         border-bottom: 8px solid transparent;
         margin-bottom: -8px;
         z-index: 99;
@@ -217,14 +218,14 @@ a {
 }
 .cover-sg {
     width: 100%;
-    background-image: url(../img/banner-01.webp);
+    background-image: url(../img/banner-02.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .cover-sg-02 {
     width: 100%;
-    background-image: url(../img/banner-02.jpg);
+    background-image: url(../img/banner-03.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -235,7 +236,7 @@ a {
 .cover .content-sg {
     width: 100%;
     height: 745px;
-    background-color: #00000086;
+    background-color: #00000033;
 }
 .content-cover .carousel-cover {
     width: 100%;
@@ -245,19 +246,19 @@ a {
         width: 100%;
         height: 747px;
         display: flex;
-        background-image: url(../img/conference.jpg);
+        background-image: url(../img/banner-01.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
     }
     .carousel-cover .card-cover .pos-card {
         width: 100%;
-        height: 100%;
+        height: 747px;
         background-color: #00000073;
     }
         .card-cover .content-card {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1310px;
             margin: 0 auto;
             margin-top: 133px;
         }
@@ -267,7 +268,7 @@ a {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                padding: 50px 100px 50px 100px;
+                padding: 40px 85px 50px 100px;
                 background-color: #ffffffd3;
             }
             .pos-card .content-card .box-cover .subtitle-box {
@@ -339,7 +340,7 @@ a {
     }
 .content-cover .pos-cover {
     width: 100%;
-    max-width: 1150px;
+    max-width: 1320px;
     margin: 0 auto;
     padding-top: 90px;
 }
@@ -347,7 +348,7 @@ a {
         width: 100%;
         max-width: 710px;
         background-color: #ffffffe0;
-        padding: 50px 50px 100px 100px;
+        padding: 40px 45px 85px 100px;
         display: flex;
         flex-direction: column;
     }
@@ -633,7 +634,8 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
 /* ----Row-vis----- */
 .content-if .head-if {
     width: 100%;
-    padding: 0px 80px;
+    max-width: 1466px;
+    margin: auto;
     margin-bottom: 80px;
     text-align: center;
 }
@@ -650,7 +652,8 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
 }
 .content-if .row-vis {
     width: 100%;
-    padding: 0px 100px;
+    max-width: 1310px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
