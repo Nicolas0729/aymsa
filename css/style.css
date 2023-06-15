@@ -233,20 +233,6 @@ header.sticky .top-header .logo-header a img {
     width: 100%;
     padding-top: 215px;
 }
-.cover-sg {
-    width: 100%;
-    background-image: url(../img/banner-02.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.cover-sg-02 {
-    width: 100%;
-    background-image: url(../img/banner-03.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .cover .content-cover {
     width: 100%;
 }
@@ -254,6 +240,20 @@ header.sticky .top-header .logo-header a img {
     width: 100%;
     height: 745px;
     background-color: #00000033;
+}
+.cover .content-sg-01 {
+    width: 100%;
+    background-image: url(../img/banner-02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.cover .content-sg-02 {
+    width: 100%;
+    background-image: url(../img/banner-03.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .content-cover .carousel-cover {
     width: 100%;
@@ -266,7 +266,7 @@ header.sticky .top-header .logo-header a img {
         background-image: url(../img/banner-01.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: right;
+        background-position: center right;
     }
     .carousel-cover .card-cover .pos-card {
         width: 100%;
@@ -748,62 +748,47 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
 }
 .footer .content-footer {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1120px;
     margin: auto;
-    padding: 30px 40px;  
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    padding: 55px 20px;  
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
 }
-.content-footer .left-footer {
+.content-footer .col-footer {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: flex-start;
-    gap: 30px;
+    display: flex;
 }
-.content-footer .left-footer .col-footer {
-    width: 100%;
+.content-footer .col-footer .item-col {
     display: flex;
     flex-direction: column;
 }
-.content-footer .left-footer .col-footer .title-col {
+.content-footer .col-footer .item-col:first-child {
+    margin-right: 50px;
+}
+.content-footer .col-footer .title-col {
     font-size: 16px;
     font-weight: 700;
     color: var(--colorWhite);
-    margin-bottom: 30px;
 }
-.content-footer .left-footer .col-footer .link-footer  {
+.content-footer .col-footer p  {
     font-size: 16px;
     color: var(--colorWhite);
     margin-bottom: 5px;
 }
-.content-footer .left-footer .col-footer p  {
-    font-size: 16px;
-    color: var(--colorWhite);
-    margin-bottom: 5px;
-}
-.content-footer .aymsa-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.content-footer .aymsa-footer img {
+.content-footer img {
     width: 220px;
     margin: auto;
     margin-bottom: 30px;
 }
-.content-footer .aymsa-footer .social-footer {
+.content-footer .social-footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    gap: 50px;
+    margin-left: auto;
 }
-.content-footer .aymsa-footer .social-footer .icon-social {
+.content-footer .icon-social {
     font-size: 40px;
     color: var(--colorWhite);
 }
@@ -812,6 +797,7 @@ background: linear-gradient(180deg, rgba(244,244,244,1) 22%, rgba(250,250,250,1)
     max-width: 1600px;
     margin: auto;
     padding: 30px 40px;
+    text-align: center;
 }
 .footer .copy p {
     font-size: 16px;

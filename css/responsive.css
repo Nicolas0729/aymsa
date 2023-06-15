@@ -19,6 +19,9 @@
     .top-header .logo-header a img {
         width: 70px;
     }
+    header.sticky .top-header .logo-header a img {
+        width: 70px;
+    }
     .content-header .top-header {
         padding: 10px 20px;
     }
@@ -26,7 +29,7 @@
         display: none;   
     }
     .search-header {
-        width: 200px;
+        width: 160px;
     }
     .search-header input[type="search"]:focus {
         width: 100%;
@@ -42,6 +45,9 @@
     }
 
     /* -------Cover------- */
+    .cover {
+        padding-top: 57px;
+    }
     .card-cover .content-card {
         margin-top: 100px;
         padding: 0px 50px 0px 0px;
@@ -181,19 +187,20 @@
     }
 
     /* ------Footer----- */
-    .content-footer .left-footer {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
     .footer .content-footer {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
-    .content-footer .left-footer .col-footer {
+    .content-footer .social-footer {
+        margin: auto;
+    }
+    .content-footer .col-footer {
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
-    .content-footer .left-footer .col-footer .title-col {
-        margin-bottom: 10px;
+    .content-footer .col-footer .title-col {
+        margin-bottom: 20px;
     }
     .footer .copy p {
         font-weight: 400;
